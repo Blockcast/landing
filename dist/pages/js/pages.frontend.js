@@ -191,7 +191,7 @@
     Pages.prototype.initAutoImageScroller = function() {
         //Scrolling Device Image : Showcase
         $('[data-pages="auto-scroll"]').each(function() {
-            var y = 0; 
+            var y = 0;
             var interval;
             var Screen = $(this).find('.iphone-border');
             var img = Screen.find('img');
@@ -327,18 +327,18 @@
     $(document).ready(function() {
         $('.menu > li > a').each(function(){
             if($(this).attr("data-toggle") =="click"){
-                $(this).on('click', function(e) {                    
+                $(this).on('click', function(e) {
                     openMenu($(this));
                 });
 
                 $(document).on("click", function(e){
                     if($('.menu').has(e.target).length == 0){
-                        $('.menu > li').removeClass('open');   
+                        $('.menu > li').removeClass('open');
                     }
                 });
             }
             else{
-                 $(this).on('mouseenter', function(e) {                    
+                 $(this).on('mouseenter', function(e) {
                     openMenu($(this));
                 });
                 $('.desktop .menu > li > nav').on('mouseleave', function(e) {

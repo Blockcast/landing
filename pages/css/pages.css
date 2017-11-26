@@ -191,7 +191,7 @@ body.pace-white .pace .pace-progress {
   border-color: #121212;
 }
 .header.dark-solid {
-  background-color: #000000;
+  background-color: #2f3f64;
 }
 .header.dark-solid .menu > li > a:not(.btn) {
   color: #ffffff;
@@ -4918,6 +4918,62 @@ fieldset[disabled] .form-control {
 .form-group-attached > div:not(:last-child) .form-group-default,
 .form-group-attached > div:not(:last-child).form-group-default {
   border-bottom-color: transparent;
+}
+
+.form-group-signup {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+.form-group-signup.input-group-attached {
+  position: relative;
+}
+
+.form-group-signup.input-group {
+  padding: 0;
+}
+
+.form-group-signup.input-group > label {
+    margin-top: 6px;
+    padding-left: 12px;
+}
+
+.form-group-signup label {
+    margin: 0;
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.form-group-signup.input-group > .form-control {
+    margin-top: -2px;
+    margin-bottom: 3px;
+    padding-left: 12px;
+}
+
+.form-group-signup .form-control {
+    border: none;
+    height: 25px;
+    min-height: 25px;
+    padding: 0;
+    margin-top: -4px;
+    background: none;
+}
+
+.form-group-signup.input-group-attached .input-group-btn {
+    right: -1%;
+}
+
+.form-group-signup.input-group-attached .input-group-btn > .btn {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 2;
 }
 /* Form layouts  : Responsive Handlers
 --------------------------------------------------

@@ -28,21 +28,17 @@
   </head>
   <body class="">
     <!-- BEGIN HEADER -->
-    <nav class="header bg-header transparent-dark " data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
+    <nav class="header md-header dark-solid" data-pages="header">
       <div class="container relative">
-        <!-- BEGIN LEFT CONTENT -->
         <div class="pull-left">
-          <!-- .header-inner Allows to vertically Align elements to the Center-->
           <div class="header-inner">
-            <!-- BEGIN LOGO -->
-            <img src="assets/images/bc-logo-blue.png" width="132" height="40" data-src-retina="assets/images/bc-logo-blue.png" class="logo" alt="">
-            <img src="assets/images/bc-logo-white.png" width="132" height="40" data-src-retina="assets/images/bc-logo-white-big.png" class="alt" alt="">
+            <img src="assets/images/bc-logo-white.png" width="132" height="40" data-src-retina="assets/images/bc-logo-white-big.png" class="logo" alt="">
           </div>
         </div>
         <!-- BEGIN HEADER TOGGLE FOR MOBILE & TABLET -->
         <div class="pull-right">
           <div class="header-inner">
-            <a href="#" class="search-toggle visible-sm-inline visible-xs-inline p-r-10" data-toggle="search"><i class="fs-14 pg-search"></i></a>
+            <a href="#" class="search-toggle visible-sm-inline visible-xs-inline p-r-10"><i class="fs-14 pg-search"></i></a>
             <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
               <div class="one"></div>
               <div class="two"></div>
@@ -50,17 +46,13 @@
             </div>
           </div>
         </div>
-        <!-- END HEADER TOGGLE FOR MOBILE & TABLET -->
-        <!-- BEGIN RIGHT CONTENT -->
-        <div class="menu-content mobile-dark pull-right clearfix" data-pages-direction="slideRight" id="header">
+        <div class="pull-right menu-content clearfix" data-pages-direction="slideRight" id="header">
           <!-- BEGIN HEADER CLOSE TOGGLE FOR MOBILE -->
           <div class="pull-right">
-            <a href="#" class="padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle" data-pages-element="#header">
+            <a href="#" class="text-black link padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle" data-pages-element="#header">
               <i class=" pg-close_line"></i>
             </a>
           </div>
-          <!-- END HEADER CLOSE TOGGLE FOR MOBILE -->
-          <!-- BEGIN MENU ITEMS -->
           <div class="header-inner">
             <ul class="menu">
               <li>
@@ -69,8 +61,22 @@
               <li>
                 <a href="#about">About Us </a>
               </li>
-              <li>
-                <a href="#technology">Technology </a>
+              <li class="classic">
+                <a href="#product">
+                  <a href="javascript:;">
+                      Product  <i class="pg-arrow_minimize m-l-5"></i>
+                    </a>
+                <nav class="classic ">
+                  <span class="arrow"></span>
+                  <ul>
+                    <li>
+                      <a href="#equiments" target="_blank">Equipments</a>
+                    </li>
+                    <li>
+                      <a href="#service" target="_blank">Service</a>
+                    </li>
+                  </ul>
+                </nav>
               </li>
               <li>
                 <a href="pricing.html">Pricing </a>
@@ -80,10 +86,12 @@
               </li>
             </ul>
           </div>
-          <!-- END MENU ITEMS -->
         </div>
       </div>
     </nav>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER -->
+
     <!-- END HEADER -->
     <div class="page-wrappers">
       <!-- BEGIN JUMBOTRON -->
@@ -91,11 +99,13 @@
         <div class="inner full-height">
           <!-- BEGIN SLIDER -->
           <div class="swiper-container" id="hero">
+            <div class="swiper-wrapper">
               <!-- BEGIN SLIDE -->
+              <div class="swiper-slide fit bg-info">
                 <!-- BEGIN IMAGE PARRALAX -->
                 <div class="slider-wrapper">
                   <div class="image" data-swiper-parallax="30%">
-                    <img draggable="false" src="assets/images/mtn_3.jpg" class="image-responsive-height" alt="" title="">
+                    <img draggable="false" src="assets/images/background2.jpg" class="image-responsive-height" alt="" title="">
                   </div>
                 </div>
                 <!-- END IMAGE PARRALAX -->
@@ -105,31 +115,52 @@
                     <div class="container-xs-height full-height">
                       <div class="col-xs-height col-middle text-left">
                         <div class="container">
-                          <div class="col-md-6 no-padding col-xs-10 col-xs-offset-1">
-                            <h1 class="light sm-text-center" data-swiper-parallax="-15%"> Your internet provider with endless possibilities.</h1>
-                            <h4 class="sm-text-center">A satellite broadband solution to make internet faster, cheaper and more accessible.</h4>
+                          <div class="col-md-6 no-padding col-xs-10">
+                            <h1 class="light sm-text-center" data-pages-animation="standard" data-delay="1100" data-type="transition.slideDownIn">
+                              Upgrade your internet to be
+                              <span class="font-montserrat text-uppercase" data-pages-init="text-rotate" data-speed="2000" data-animation="fade">
+                                Faster, More Secure, More Accesible
+                              </span>
+                            </h1>
+                            <!-- <h5 class="light sm-text-center">An open-source satellite broadband solution to make internet faster, more secure and more accessible.</h5> -->
                             <!-- <h5 class="block-title text-white sm-text-center">Behind the scenes watch tour</h5> -->
-                            <form class="m-t-40 m-b-5 clearfix">
-                              <div class="col-sm-8  md-p-l-0 no-padding">
-                                <div class="form-group form-group-default input-group input-group-attached col-xs-12">
-                                  <label class="control-label">Email Address</label>
-                                  <input type="email" class="form-control" placeholder="email@abc.com">
-                                  <span class="input-group-btn">
-                                    <a href="mailchimp-signup.html" class="btn btn-danger btn-cons btn-signup" type="button">Join The Waitlist</a>
-                                  </span>
+                            <h5 class="font-open-sans sm-text-center">Blockcast provides a fast, uncensored internet solution anywhere in the world, powered by Satellites</h5>
+                            <!-- Begin MailChimp Signup Form -->
+                            <div id="mc_embed_signup">
+                              <form action="https://Blockcast.us16.list-manage.com/subscribe/post?u=2e9e8d994c5534f75657b2eb7&amp;id=9eb5694a52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="m-t-40 m-b-5 clearfix validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll" class="col-sm-8  md-p-l-0 no-padding">
+                                  <div class="form-group form-group-signup input-group input-group-attached col-xs-12">
+                                    <label for="mce-EMAIL" class="control-label signup-form-label">Email Address</label>
+                                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email@abc.com" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2e9e8d994c5534f75657b2eb7_9eb5694a52" tabindex="-1" value=""></div>
+                                    <span class="clear input-group-btn">
+                                      <input type="submit" value="Join The Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-danger btn-cons btn-signup">
+                                    </span>
+                                  </div>
+                                  <p class="fs-12 m-r-20">Be first to find out when we Launch our product.</p>
                                 </div>
-                                <p class="fs-12 m-r-20">Be first to find out when we Launch our product.</p>
-                              </div>
-                            </form>
-                            <!-- <p class="fs-12 font-arial hint-text sm-text-center">Available at themeforest, envato market place.</p> -->
+                              </form>
+                            </div>
+
+                            <!--End mc_embed_signup-->
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- BEGIN ANIMATED MOUSE -->
+                <div class="mouse-wrapper">
+                  <div class="mouse">
+                    <div class="mouse-scroll"></div>
+                  </div>
+                </div>
+                <!-- END ANIMATED MOUSE -->
                 <!-- END CONTENT -->
               </div>
+            </div>
+            </div>
               <!-- END SLIDE -->
             </div>
           </div>
@@ -144,12 +175,14 @@
             <h5 class="block-title hint-text no-margin">Our Vision</h5>
             <div class="row">
               <div class="col-sm-5 col-md-4">
-                <h1 class="m-t-5">Different way to access internet.</h1>
+                <h2 class="m-t-5">Internet should be accessible by EVERYONE, from EVERYWHERE</h2>
               </div>
               <div class="col-sm-7 col-md-8 no-padding xs-p-l-15 xs-p-r-15">
                 <div class="p-t-20 p-l-35 md-p-l-5 md-p-t-15">
                   <p>
-                    Blockcast is a low cost open source asymmetric satellite broadband solution that can upgrade the link speed of existing connection by leveraging satellite television broadcasts. We tackle bandwidth scarcity using satellite broadcast streams to accelerate downloads, and blockchain to share the use of high throughput broadcast links.
+                    // how many people have access to internet? Information should be free, everyone should be able to stream media， watch video freely.
+                    51% of the world's population is on internet, and of the 51%, 1/3 are censored, and 1/3 are slow speed
+                    Blockcast is a low-cost, open-source satellite broadband solution that can upgrade the link speed of existing connection by leveraging satellite television broadcasts. We tackle bandwidth scarcity using satellite broadcast streams to accelerate downloads, and blockchain to share the use of high throughput broadcast links.
                   </p>
                   <p>
                     High latency networks are a real barrier of entry to developing world. Blockcast provides resilient, fast access to internet, independent of connectivity
@@ -163,10 +196,46 @@
       </section>
 
       <!-- START CONTENT SECTION -->
-      <section class="p-b-100 p-t-80" id="technology">
+      <section id="section1" class="p-b-100 p-t-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <h2 class="inline p-r-15 m-b-0"><img src="assets/images/crop.svg" class="feature-icon" alt=""></h2>
+              <h5 class="block-title m-b-0 inline">More Accesible </h5>
+              <div class="p-l-45">
+                <h2 class="m-t-0">Anywhere in the world</h2>
+                <p class="m-t-20">This solution can convert a low throughput terrestrial connection into an uplink to introduce broadband service in areas with restricted or limited connectivity.</p>
+                <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <h2 class="inline p-r-15 m-b-0"><img src="assets/images/meter.svg" class="feature-icon" alt=""></h2>
+              <h5 class="block-title m-b-0 inline">Cheaper </h5>
+              <div class="p-l-45">
+                <h2 class="m-t-0">Cost effective</h2>
+                <p class="m-t-20">Leveraging crowd request pooling, our solution can be much cheaper than the traditional broadband solution, especially in areas where infrastructure is lacking.</p>
+                <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <h2 class="inline p-r-15 m-b-0"><img src="assets/images/size.svg" class="feature-icon" alt=""></h2>
+              <h5 class="block-title m-b-0 inline">More Open </h5>
+              <div class="p-l-45">
+                <h2 class="m-t-0">No Boundaries</h2>
+                <p class="m-t-20">We are not blocked by any type of firewalls. You are free to explore the world as much as you want!</p>
+                <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END CONTENT SECTION -->
+
+      <!-- START CONTENT SECTION -->
+      <section class="p-b-100 p-t-80" id="product">
         <div class="container">
           <!-- <h6 class="block-title m-b-0 text-center">Paint it the way you Like it</h6> -->
-          <h1 class="m-t-5 light text-center">Something Different, Something New.</h1>
+          <h1 class="m-t-5 light text-center">Blah Blah Blah  </h1>
           <div class="row m-t-50 ">
             <div class="col-md-6 col-sm-6 text-right sm-text-center sm-p-l-0">
               <img class="p-r-40 m-t-10 sm-no-padding" src="assets/images/bc_tech_diagram.gif" width="480px" height=auto alt="">
@@ -182,42 +251,6 @@
         </div>
       </section>
       <!-- END CONTENT SECTION -->
-
-    <!-- START CONTENT SECTION -->
-    <section id="section1" class="p-b-100 p-t-10">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <h2 class="inline p-r-15 m-b-0"><img src="assets/images/crop.svg" class="feature-icon" alt=""></h2>
-            <h5 class="block-title m-b-0 inline">More Accesible </h5>
-            <div class="p-l-45">
-              <h2 class="m-t-0">Anywhere in the world</h2>
-              <p class="m-t-20">This solution can convert a low throughput terrestrial connection into an uplink to introduce broadband service in areas with restricted or limited connectivity.</p>
-              <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <h2 class="inline p-r-15 m-b-0"><img src="assets/images/meter.svg" class="feature-icon" alt=""></h2>
-            <h5 class="block-title m-b-0 inline">Cheaper </h5>
-            <div class="p-l-45">
-              <h2 class="m-t-0">Cost effective</h2>
-              <p class="m-t-20">Leveraging crowd request pooling, our solution can be much cheaper than the traditional broadband solution, especially in areas where infrastructure is lacking.</p>
-              <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <h2 class="inline p-r-15 m-b-0"><img src="assets/images/size.svg" class="feature-icon" alt=""></h2>
-            <h5 class="block-title m-b-0 inline">More Open </h5>
-            <div class="p-l-45">
-              <h2 class="m-t-0">No Boundaries</h2>
-              <p class="m-t-20">We are not blocked by any type of firewalls. You are free to explore the world as much as you want!</p>
-              <p class="font-arial hint-text small m-t-30">Meow meow meow meow meow meow.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END CONTENT SECTION -->
 
       <!-- START CONTACT SECTION -->
       <section class="container container-fixed-lg p-t-50 p-b-100 sm-p-b-30 sm-m-b-30" id="contact-us">
@@ -277,7 +310,6 @@
                     <textarea name="message" placeholder="Type the message you wish to send" style="height:100px" class="form-control" required></textarea>
                   </div>
                   <div class="sm-p-t-10 clearfix">
-                    <p class="pull-left small hint-text m-t-5 font-arial">I hereby certify that the information above is true and accurate. </p>
                     <button class="btn btn-primary font-montserrat all-caps fs-12 pull-right xs-pull-left">Submit</button>
                   </div>
                   <div class="clearfix"></div>
@@ -332,19 +364,19 @@
       </section>
       <!-- END FOOTER -->
       <!-- START OVERLAY -->
-      <div class="overlay hide" data-pages="search">
+      <!-- <div class="overlay hide" data-pages="search"> -->
         <!-- BEGIN Overlay Content !-->
-        <div class="overlay-content full-height has-results">
+        <!-- <div class="overlay-content full-height has-results"> -->
           <!-- END Overlay Header !-->
-          <div class="container relative full-height">
+          <!-- <div class="container relative full-height"> -->
             <!-- BEGIN Overlay Header !-->
-            <div class="container-fluid">
+            <!-- <div class="container-fluid"> -->
               <!-- BEGIN Overlay Close !-->
-              <a href="#" class="close-icon-light overlay-close text-black fs-16 top-right">
+              <!-- <a href="#" class="close-icon-light overlay-close text-black fs-16 top-right">
                 <i class="pg-close_line"></i>
-              </a>
+              </a> -->
               <!-- END Overlay Close !-->
-            </div>
+            <!-- </div>
             <div class="container-fluid">
               <div class="inline-block bottom-right m-b-30">
                 <div class="checkbox right">
@@ -354,29 +386,40 @@
               </div>
             </div>
             <div class="container-xs-height full-height">
-              <div class="col-xs-height col-middle text-center">
+              <div class="col-xs-height col-middle text-center"> -->
                 <!-- BEGIN Overlay Controls !-->
-                <input id="overlay-search" class="no-border overlay-search bg-transparent col-sm-6 col-sm-offset-4" placeholder="Search..." autocomplete="off" spellcheck="false">
+                <!-- <input id="overlay-search" class="no-border overlay-search bg-transparent col-sm-6 col-sm-offset-4" placeholder="Search..." autocomplete="off" spellcheck="false">
                 <br>
                 <div class="inline-block bottom-left m-l-10 m-b-30 hidden-xs">
                   <p class="fs-14"><i class="fa fa-search m-r-10"></i> Press enter to search</p>
-                </div>
+                </div> -->
                 <!-- END Overlay Controls !-->
-              </div>
+              <!-- </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- END Overlay Content !-->
-      </div>
+      <!-- </div> -->
       <!-- END OVERLAY -->
     </div>
+
     <!-- BEGIN VENDOR JS -->
+    <!-- BEGIN CORE FRAMEWORK -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="pages/js/pages.image.loader.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script> -->
+    <!-- BEGIN SLIDER DEPENDENCIES -->
+    <script type="text/javascript" src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
     <script type="text/javascript" src="assets/plugins/velocity/velocity.min.js"></script>
     <script type="text/javascript" src="assets/plugins/velocity/velocity.ui.js"></script>
+    <!-- BEGIN RETINA IMAGE LOADER -->
     <script type="text/javascript" src="assets/plugins/jquery-unveil/jquery.unveil.min.js"></script>
+    <!-- BEGIN TEXT ROTATOR -->
+    <script type="text/javascript" src="assets/plugins/text-rotate/jquery.simple-text-rotator.min.js"></script>
+    <!-- BEGIN AUTO-ANIMATE NUMBERS -->
+    <script type="text/javascript" src="assets/plugins/jquery-appear/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/plugins/animateNumber/jquery.animateNumbers.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
