@@ -256,9 +256,9 @@
               <h5 class="block-title m-b-0 inline">More effecient </h5>
               <div class="p-l-45">
                 <h2 class="m-t-0">Secure local cache</h2>
-                <p class="m-t-20">Trusted applications can leverage a local proxy to terminate SSL and a local webserver to serve cached materials from disk.
+                <p class="m-t-20">Trusted applications can leverage a secure local proxy to terminate SSL and a webserver to serve cached materials.
                   This can drastically reduce network congestion and reduce loading times.
-                  Because the satellite is a broadcast medium, applications can multicast to an audience, and users can choose to save it to disk.
+                  Because the satellite is a broadcast medium, applications can multicast streams off peak hours to fill caches, which users can enjoy later.
                   Data is encrypted and keys released to the intended audience.</p>
                 <p class="font-arial hint-text small m-t-30">*Contact us for consultations on integrations.</p>
               </div>
@@ -293,9 +293,9 @@
             </div>
             <div class="col-md-6 col-sm-6 p-t-10">
               <h6 class="block-title">Asymmetric link acceess <i class="pg-arrow_right m-l-20"></i></h6>
-              <p class=" m-t-15">Our satellite fleet operates in the Ku band and can be received with a standard 1.2m dish used for digital television. A built in DVB-S2/S2X demodulator chip converts tunes into a shared data link that can burst up to 216 MBit/s in clear conditions. Unicast traffic is IPsec by default. Relevant traffic is handled at the local gateway in a learning bridge to a Wi-Fi or a physical interface. Response traffic back to the satellite gateway is tunneled through a bonded interface in active backup between OpenVPN L2TP and a GRE tunnel over the available connection.
+              <p class=" m-t-15">Our satellite fleet operates in the Ku band and can be received with a standard 1.2m dish used for digital television. A built in DVB-S2/S2X demodulator chip zaps to the channel creating a shared data link that can burst up to 216 MBit/s in clear conditions. Unicast traffic is IPsec by default. Relevant traffic is handled at the local gateway in a bridge to a Wi-Fi or a physical interface. Response traffic back to the satellite gateway is tunneled through a bonded interface in active backup between OpenVPN L2TP and a GRE tunnel over the available uplink.
                 <br />
-                Clients are issued 802.1x credentials that they can setup their box in hotspot mode or private LAN. Once authenticated with our server, they begin issuing network requests that can either be routed locally or to remote servers. With over 90% of user traffic being downloads, this solution can convert a low throughput terrestrial connection into an uplink to introduce broadband service in areas with restricted or limited connectivity.</p>
+                Clients are issued 802.1x credentials that they can setup their box in hotspot mode for a public space or as a private LAN for home. Once authenticated with our server, users can issue network requests that can either be routed locally or to remote servers. With over 90% of user traffic being downloads, this solution can convert a low throughput terrestrial connection into an uplink to introduce broadband service in areas with restricted or limited connectivity.</p>
               <h6 class="block-title m-t-50">Open source Access Point <i class="pg-arrow_right m-l-20"></i></h6>
               <p class=" m-t-15">The access point is an open source edge platform. It has managed software switch which can receive configuration updates from a network controller.
                 It also has libraries which allow developers to leverage addtional services such as secure storage and ceritficate management for SSL termination.
