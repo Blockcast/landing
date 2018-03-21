@@ -1,7 +1,7 @@
-<?php 
+<?php
 
     require '../_lib/phpmailer/PHPMailerAutoload.php';
- 
+
     // CONFIG YOUR FIELDS
     //============================================================
     $name =     filter_var($_POST["name"], FILTER_SANITIZE_STRING);
@@ -25,8 +25,8 @@
 
     $mail->Username = 'postmaster@mycompany.com';                  // SMTP username
     $mail->Password = '';                         // SMTP password
-    $mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted                                   
-    $mail->Port = 587;                        
+    $mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
+    $mail->Port = 587;
 
     $mail->From = $email;
     $mail->FromName = $name;
