@@ -1,7 +1,7 @@
-<?php 
+<?php
 
     require '../_lib/phpmailer/PHPMailerAutoload.php';
- 
+
     // CONFIG YOUR FIELDS
     //============================================================
     $name =     filter_var($_POST["name"], FILTER_SANITIZE_STRING);
@@ -21,12 +21,12 @@
     $mail->isSMTP();                                    // Enable SMTP authentication
     $mail->SMTPAuth = true;                             // Set mailer to use SMTP
     //Sign up with MAIL GUN
-    $mail->Host = 'smtp.mailgun.org';                // Specify main and backup server (this is a fake name for the use of this example)             
+    $mail->Host = 'smtp.mailgun.org';                // Specify main and backup server (this is a fake name for the use of this example)
 
     $mail->Username = 'postmaster@mycompany.com';                  // SMTP username
     $mail->Password = '';                         // SMTP password
-    $mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted                                   
-    $mail->Port = 587;                        
+    $mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
+    $mail->Port = 587;
 
     $mail->From = $email;
     $mail->FromName = $name;
