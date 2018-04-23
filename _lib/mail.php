@@ -21,7 +21,7 @@
     $mail->isSMTP();                                    // Enable SMTP authentication
     $mail->SMTPAuth = true;                             // Set mailer to use SMTP
     //Sign up with MAIL GUN
-    $mail->Host = 'smtp.mailgun.org';                // Specify main and backup server (this is a fake name for the use of this example)             
+    $mail->Host = 'smtp.mailgun.org';                // Specify main and backup server (this is a fake name for the use of this example)
 
     $mail->Username = 'postmaster@mycompany.com';                  // SMTP username
     $mail->Password = '';                         // SMTP password
