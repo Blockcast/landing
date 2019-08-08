@@ -23,56 +23,67 @@
     <!-- END PLUGINS -->
     <!-- BEGIN PAGES CSS -->
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/custom.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <!-- BEGIN PAGES CSS -->
   </head>
   <body class="">
-    <!-- BEGIN HEADER -->
-    <nav class="header bg-header transparent-dark" data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
-      <div class="container relative">
+<!-- BEGIN HEADER -->
+<nav class="header bg-header transparent-dark" data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark">
+    <div class="container relative">
         <div class="pull-left">
-          <div class="header-inner">
+        <div class="header-inner">
             <img src="assets/images/bc-logo-blue.png" width="132" height="40" data-src-retina="assets/images/bc-logo-blue.png" class="logo" alt="">
             <img src="assets/images/bc-logo-white.png" width="132" height="40" data-src-retina="assets/images/bc-logo-white-big.png" class="alt" alt="">
-          </div>
+        </div>
         </div>
         <!-- BEGIN HEADER TOGGLE FOR MOBILE & TABLET -->
         <div class="pull-right">
-          <div class="header-inner">
+        <div class="header-inner">
             <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
             </div>
-          </div>
+        </div>
         </div>
         <div class="pull-right menu-content clearfix" data-pages-direction="slideRight" id="header">
-          <!-- BEGIN HEADER CLOSE TOGGLE FOR MOBILE -->
-          <div class="pull-right">
+        <!-- BEGIN HEADER CLOSE TOGGLE FOR MOBILE -->
+        <div class="pull-right">
             <a href="#" class="text-black link padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle" data-pages-element="#header">
-              <i class=" pg-close_line"></i>
+            <i class=" pg-close_line"></i>
             </a>
-          </div>
-          <div class="header-inner">
-            <ul class="menu">
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#usecases">Use Cases </a>
-              </li>
-              <li>
-                <a href="#contact-us">Contact Us</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </nav>
-    <!-- END HEADER -->
-    <!-- BEGIN HEADER -->
-
-    <!-- END HEADER -->
+        <div class="header-inner">
+            <ul class="menu">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <!-- <li class="classic">
+                <a href="javascript:;" data-text="use-cases">
+                Use Cases  <i class="pg-arrow_minimize m-l-5"></i>
+                </a>
+                <nav class="classic ">
+                    <span class="arrow"></span>
+                    <ul>
+                        <li>
+                            <a href="/inflight" target="_blank">Inflight</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li> -->
+            <li>  
+              <a href="#usecases">Use Cases </a>
+            </li>
+            <li>
+                <a href="#contact-us">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+<!-- END HEADER -->
     <div class="page-wrappers">
       <!-- BEGIN JUMBOTRON -->
       <section class="full-vh">
@@ -100,28 +111,27 @@
                              <span class="font-montserrat sm-text-center" data-pages-init="text-rotate" data-speed="2000" data-animation="fade">Extending CDNs to the end user premises, A point of presence even in the most remote access network, Application performance acceleration and bandwidth reduction</span>
                             </h1>
                             <!-- <h5 class="block-title text-white sm-text-center">Behind the scenes watch tour</h5> -->
-                            <h4 class="font-open-sans sm-text-center hidden-xs hidden-sm">Blockcast is a satellite CDN that optimizes network traffic even in the most bandwidth-constrained places</h4>
-                            <h2 class="font-open-sans sm-text-center visible-xs visible-sm">Blockcast is a satellite CDN that optimizes network traffic even in the most bandwidth-constrained places</h2>
-                            <!-- Begin MailChimp Signup Form -->
-                            <div id="mc_embed_signup">
-                              <form action="https://Blockcast.us16.list-manage.com/subscribe/post?u=2e9e8d994c5534f75657b2eb7&amp;id=9eb5694a52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="xs-m-t-15 sm-m-t-10 m-t-40 m-b-5 clearfix validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll" class="">
-                                  <div class="form-group form-group-signup input-group input-group-attached  col-md-12  col-sm-12 col-xs-12">
-                                    <label for="mce-EMAIL" class="control-label signup-form-label">Email Address</label>
-                                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email@abc.com" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2e9e8d994c5534f75657b2eb7_9eb5694a52" tabindex="-1" value=""></div>
-                                    <span class="clear input-group-btn">
-                                      <input type="submit" value="Join The Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-danger btn-cons">
-                                    </span>
+                              <h4 class="font-open-sans sm-text-center hidden-xs hidden-sm">Blockcast is a satellite CDN that optimizes network traffic even in the most bandwidth-constrained places</h4>
+                              <h2 class="font-open-sans sm-text-center visible-xs visible-sm">Blockcast is a satellite CDN that optimizes network traffic even in the most bandwidth-constrained places</h2>
+                              <!-- Begin MailChimp Signup Form -->
+                              <div id="mc_embed_signup">
+                                <form action="https://Blockcast.us16.list-manage.com/subscribe/post?u=2e9e8d994c5534f75657b2eb7&amp;id=9eb5694a52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="xs-m-t-15 sm-m-t-10 m-t-40 m-b-5 clearfix validate" target="_blank" novalidate>
+                                  <div id="mc_embed_signup_scroll" class="">
+                                    <div class="form-group form-group-signup input-group input-group-attached  col-md-12  col-sm-12 col-xs-12">
+                                      <label for="mce-EMAIL" class="control-label signup-form-label">Email Address</label>
+                                      <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email@abc.com" required>
+                                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2e9e8d994c5534f75657b2eb7_9eb5694a52" tabindex="-1" value=""></div>
+                                      <span class="clear input-group-btn">
+                                        <input type="submit" value="Join The Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-danger btn-cons">
+                                      </span>
+                                    </div>
+                                    <p class="fs-12 m-r-20">
+                                      Be the first to find out when we launch our product.
+                                    </p>
                                   </div>
-                                  <p class="fs-12 m-r-20">
-                                    Be the first to find out when we launch our product.
-                                  </p>
-                                </div>
-                              </form>
-                            </div>
-
+                                </form>
+                              </div>
                             <!--End mc_embed_signup-->
                           </div>
                         </div>
@@ -148,44 +158,41 @@
       </section>
       <!-- END JUMBOTRON -->
       <!-- BEGIN CONTENT SECTION -->
-      <section class="bg-master-lightest p-b-85 p-t-85" id="about">
+      <section class="bg-master-lightest p-b-25 p-t-75" id="about">
         <div class="container">
           <div class="md-p-l-20 md-p-r-20 xs-no-padding">
-            <h5 class="block-title hint-text no-margin">ABOUT US</h5>
             <div class="row">
               <div class="col-sm-7">
-                <h2 class="m-t-5 m-b-20">Making <b>relavant</b> bandwidth <b>abundant</b></h2>
+                  <h5 class="block-title hint-text no-margin">ABOUT US</h5>
+                <h3 class="m-t-5 m-b-20">Making <b>relavant</b> bandwidth <b>abundant</b></h3>
                 <p class="m-b-20">Blockcast is a content delivery network that reduces waste and deduplicates traffic across internet services to improve application performance without compromising security. We developed a multicast proxy which continuously pre-caches personalized content, and decreases network congestion even over the most constrained links such as inflight connectivity, rural and remote networks, oil rigs, etc.</p>
                 <!-- <p class="hint-text font-arial small-text col-md-8 no-padding">This is something extra to give users an exceptional user experience with a condensed menu.</p> -->
               </div>
-              <div class="col-sm-5 no-padding xs-p-l-15 xs-p-r-15">
-                <div class="content-mask-md">
-                  <img class="xs-image-responsive-height image-responsive-width sm-no-padding lazy loaded p-l-40 m-t-10 full-width full-height" src="assets/images/about_illustration.svg">
-                </div>
+              <div class="col-sm-5">
+                  <img class="xs-image-responsive-height xs-image-responsive-width sm-no-padding lazy loaded p-l-40 full-height full-width landing-page-about-image" src="assets/images/about_illustration.svg">
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-master-light p-b-85 p-t-100">
+      <section class="bg-master-light p-b-25 p-t-35">
         <div class="container">
-          <div class="col-sm-5 no-padding xs-p-l-15 xs-p-r-15">
-            <div class="content-mask-md">
-              <img alt="" class="xs-image-responsive-height image-responsive-width sm-no-padding lazy loaded p-r-40 m-t-10 full-width full-height" src="assets/images/mission_illustration.svg">
-            </div>
+          <div class="col-sm-5">
+            <img alt="" class="xs-image-responsive-height image-responsive-width sm-no-padding lazy loaded p-r-40 full-width full-height landing-page-about-image" src="assets/images/mission_illustration.svg">
           </div>
           <div class="col-sm-7">
             <h5 class="block-title hint-text no-margin">OUR VISION</h5>
-            <h2 class="m-t-5 m-b-20">More <b>affordable</b>, <b>faster</b> internet with <b>less</b> waste</h2>
+            <h3 class="m-t-5 m-b-20">More <b>affordable</b>, <b>faster</b> internet with <b>less</b> waste</h3>
               <!-- <p class="hint-text font-arial small-text col-md-4 col-sm-6 no-padding">Via Senior Vice President Design REVOX Ltd. 12345</p> -->
             <p class="m-b-20">Our mission is to eliminate bandwidth scarcity and make interactive media accessible to everyone. The way CDNs exclusive deploy their caching appliances today only benefits large ISPs while the billions in remote areas with limited bandwidth must burden the costs without reaping most of the benefits. Blockcast envisions a new,  more affordable internet with a caching infrastructure that reduces waste wherever you are.</p>
           </div>
         </div>
       </section>
-
+    
+    <section class="bg-master-light spacer-for-usecases" id="usecases"></section>
     <!-- BEGIN INTRO CONTENT -->
-    <section class="container-fluid b-t b-white" id="usecases">
+    <section class="container-fluid b-t b-white">
       <div class="row">
         <div class="col-md-4 text-center bg-success hover-push demo-story-block">
           <div class="hover-backdrop" style="background:url('assets/images/planes.jpg')"></div>
@@ -246,12 +253,12 @@
             <div class="p-l-40 sm-p-l-0 sm-p-t-10">
               <div class="panel" id="contact-panel">
                 <p class="semi-bold no-margin">Fill up this form to contact us if you have any futher questions</p>
-                <form role="form" autocomplete="off" class="m-t-15" id="contact-form" action="_lib/mail.php" method="post">
+                <form role="form" autocomplete="off" class="m-t-15" id="contact-form" action="https://formspree.io/lisa@blockcast.net" method="POST">
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group form-group-default required">
                         <label class="control-label">First name</label>
-                        <input type="text" name="name" class="form-control" required>
+                        <input type="text" name="first-name" class="form-control" required>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -320,7 +327,6 @@
     <!-- END PAGES LIB -->
     <!-- BEGIN YOUR CUSTOM JS -->
     <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="assets/js/contact.js"></script>
     <!-- END PAGES LIB -->
   </body>
 </html>
