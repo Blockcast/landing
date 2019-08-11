@@ -5,3 +5,13 @@
 .spacer-for-usecases {
     height: 60px;
 }
+
+.inflight-number {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.text-primary {
+    color: #21507b !important;
+}
